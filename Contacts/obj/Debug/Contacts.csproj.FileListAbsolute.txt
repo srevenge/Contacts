@@ -1,0 +1,11 @@
+C:\Users\Admin\Desktop\Project\C#\Pracitces\Contacts\Contacts\bin\Debug\Contacts.exe.config
+C:\Users\Admin\Desktop\Project\C#\Pracitces\Contacts\Contacts\bin\Debug\Contacts.exe
+C:\Users\Admin\Desktop\Project\C#\Pracitces\Contacts\Contacts\bin\Debug\Contacts.pdb
+C:\Users\Admin\Desktop\Project\C#\Pracitces\Contacts\Contacts\obj\Debug\Contacts.Add.resources
+C:\Users\Admin\Desktop\Project\C#\Pracitces\Contacts\Contacts\obj\Debug\Contacts.Main.resources
+C:\Users\Admin\Desktop\Project\C#\Pracitces\Contacts\Contacts\obj\Debug\Contacts.ListItem.resources
+C:\Users\Admin\Desktop\Project\C#\Pracitces\Contacts\Contacts\obj\Debug\Contacts.Properties.Resources.resources
+C:\Users\Admin\Desktop\Project\C#\Pracitces\Contacts\Contacts\obj\Debug\Contacts.Update.resources
+C:\Users\Admin\Desktop\Project\C#\Pracitces\Contacts\Contacts\obj\Debug\Contacts.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\Project\C#\Pracitces\Contacts\Contacts\obj\Debug\Contacts.exe
+C:\Users\Admin\Desktop\Project\C#\Pracitces\Contacts\Contacts\obj\Debug\Contacts.pdb
