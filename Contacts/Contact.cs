@@ -3,6 +3,7 @@ using System.Drawing;
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
+using System.Windows;
 
 namespace Contacts
 {
@@ -111,14 +112,14 @@ namespace Contacts
             }
             set
             {
-                this._img = (value != null) ? value : Image.FromFile("C:\\Users\\Admin\\Desktop\\images.png");
+                this._img = (value != null) ? value : Image.FromFile("Images\\Person.png");
             }
         }
 
         public void save()
         {
 
-            string serializationFile = "C:\\Users\\Admin\\Desktop\\cn.bin";
+            string serializationFile = "cData\\cn.bin";
             if(File.Exists(serializationFile))
             {
                 List<Contact> l = new List<Contact>();

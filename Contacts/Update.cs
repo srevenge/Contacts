@@ -76,7 +76,7 @@ namespace Contacts
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string serializationFile = "C:\\Users\\Admin\\Desktop\\cn.bin";
+            string serializationFile = "cData\\cn.bin";
             Main._contacts.Remove(Main.contact);
 
             if (Main._contacts.Count == 0)
@@ -119,7 +119,7 @@ namespace Contacts
 
         private void write()
         {
-            string serializationFile = "C:\\Users\\Admin\\Desktop\\cn.bin";
+            string serializationFile = "cData\\cn.bin";
             //serialize
             using (Stream stream = File.Open(serializationFile, FileMode.Create))
             {

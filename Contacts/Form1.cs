@@ -37,7 +37,7 @@ namespace Contacts
         public static void initContacts()
         {
             _contacts = new List<Contact>();
-            string serializationFile = "C:\\Users\\Admin\\Desktop\\cn.bin";
+            string serializationFile = "cData\\cn.bin";
             if (File.Exists(serializationFile))
             {
                 //deserialize

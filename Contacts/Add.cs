@@ -59,8 +59,14 @@ namespace Contacts
                 listItem.img = contact.img;
                 listItem.Click += this.main.btnDel_click;
 
-                Color oldColor = this.main.flowLayoutPanel1.Controls[this.main.flowLayoutPanel1.Controls.Count - 1].BackColor;
-                listItem.BackColor = (oldColor == Color.Bisque) ? Color.DarkSalmon : Color.Bisque;
+                if(this.main.flowLayoutPanel1.Controls.Count != 0)
+                {
+                    Color oldColor = this.main.flowLayoutPanel1.Controls[this.main.flowLayoutPanel1.Controls.Count - 1].BackColor;
+                    listItem.BackColor = (oldColor == Color.Bisque) ? Color.DarkSalmon : Color.Bisque;
+                }
+                else
+                    listItem.BackColor = Color.Bisque;
+                
                 this.main.flowLayoutPanel1.Controls.Add(listItem);
 
                 
