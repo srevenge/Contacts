@@ -83,12 +83,24 @@ namespace Contacts
         public void btnDel_click(object sender, EventArgs e)
         {
             ListItem l = (ListItem) sender;
+            Boolean flag = false;
             foreach (Contact c in _contacts)
-                if (l.phone.Equals(c.phone) || l.phone.Equals(c.home))
+                if ((l.phone.Equals(c.phone) || l.phone.Equals(c.home)) && (l.name.Contains(c.name)))
+                {
                     contact = c;
-
-            this.Enabled = false;
-            new Update(this).Show();
+                    flag = true;
+                    break;
+                }
+            if(flag)
+            {
+                this.Enabled = false;
+                
+                new Update(this).Show();
+            }else
+            {
+                MessageBox.Show("همچین موردی یافت نشد");
+            }
+            
 
         }
 

@@ -70,7 +70,7 @@ namespace Contacts
             this.textBox1.Text = Main.contact.name;
             this.textBox2.Text = Main.contact.family;
             this.textBox3.Text = (Main.contact.phone == "-1") ? "" : Main.contact.phone;
-            this.textBox4.Text = (Main.contact.home == "-1") ? "" : Main.contact.phone;
+            this.textBox4.Text = (Main.contact.home.Equals("-1")) ? "" : Main.contact.home;
             this.textBox5.Text = (Main.contact.email == "-1") ? "" : Main.contact.email;
         }
 

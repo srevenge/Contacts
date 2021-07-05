@@ -49,28 +49,31 @@ namespace Contacts
                 {
                     this.reset();
                     MessageBox.Show("لطفا حداقل یک شماره وارد کنید");
-                    
-                }
-                contact.save();
-                Main._contacts.Add(contact);
-                ListItem listItem = new ListItem();
-                listItem.name = contact.name;
-                listItem.phone = (contact.phone == "-1" || contact.phone.Trim() == "") ? contact.home : contact.phone;
-                listItem.img = contact.img;
-                listItem.Click += this.main.btnDel_click;
 
-                if(this.main.flowLayoutPanel1.Controls.Count != 0)
+                }else
                 {
-                    Color oldColor = this.main.flowLayoutPanel1.Controls[this.main.flowLayoutPanel1.Controls.Count - 1].BackColor;
-                    listItem.BackColor = (oldColor == Color.Bisque) ? Color.DarkSalmon : Color.Bisque;
-                }
-                else
-                    listItem.BackColor = Color.Bisque;
-                
-                this.main.flowLayoutPanel1.Controls.Add(listItem);
+                    contact.save();
+                    Main._contacts.Add(contact);
+                    ListItem listItem = new ListItem();
+                    listItem.name = contact.name;
+                    listItem.phone = (contact.phone == "-1" || contact.phone.Trim() == "") ? contact.home : contact.phone;
+                    listItem.img = contact.img;
+                    listItem.Click += this.main.btnDel_click;
+                    
+                    if (this.main.flowLayoutPanel1.Controls.Count != 0)
+                    {
+                        Color oldColor = this.main.flowLayoutPanel1.Controls[this.main.flowLayoutPanel1.Controls.Count - 1].BackColor;
+                        listItem.BackColor = (oldColor == Color.Bisque) ? Color.DarkSalmon : Color.Bisque;
+                    }
+                    else
+                        listItem.BackColor = Color.Bisque;
 
+                    this.main.flowLayoutPanel1.Controls.Add(listItem);
+
+
+                    this.Close();
+                }
                 
-                this.Close();
 
             }
             else
